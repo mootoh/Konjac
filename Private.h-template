@@ -1,0 +1,15 @@
+//
+//  Private.h
+//  NumberInput
+//
+//  Created by Motohiro Takayama on 8/24/11.
+//  Copyright (c) 2011 deadbeaf.org. All rights reserved.
+//
+
+#ifndef NumberInput_Private_h
+#define NumberInput_Private_h
+
+// use your Google API key like:
+// #define k_api_key @"abcdefg"
+
+#endif
