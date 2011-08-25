@@ -1,8 +1,8 @@
 /*
 
-File:NumberInputApplicationDelegate.h
+File:KonjacController.h
 
-Abstract: The input method's application delegate object.
+Abstract: Input controller header file.
 
 Version: 1.0
 
@@ -48,16 +48,36 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 
 */
 #import <Cocoa/Cocoa.h>
-#import "ConversionEngine.h"
+#import <InputMethodKit/InputMethodKit.h>
 
-// The conversion engine is shared by all the input controllers. For that reason we store it in the application delegate where it 
-// can be accessed by any of the controllers.
-// Note that the ConversionEngine is instantiated automatically because we said to instantiate the engine object in Interface Builder.
+const NSString* kDecimalMode = @"com.apple.inputmethod.decimal";
+const NSString* kCurrencyMode = @"com.apple.inputmethod.currency";
+const NSString* kPercentMode = @"com.apple.inputmethod.percent";
+const NSString* kScientificMode = @"com.apple.inputmethod.scientific";
+const NSString* kSpelloutMode = @"com.apple.inputmethod.spellout";
 
-@interface NumberInputApplicationDelegate : NSObject {
-	IBOutlet ConversionEngine*			_conversionEngine;
+@interface KonjacController : IMKInputController {
+		
+		//_composedBuffer contains text that the input method has converted
+		NSMutableString*				_composedBuffer;
+		//_original buffer contains the text has it was received from user input.
+		NSMutableString*				_originalBuffer;
+		//used to mark where text is being inserted in the _composedBuffer
+		NSInteger						_insertionIndex;
+		//This flag indicates that the original text was converted once in response to a trigger (space key)
+		//the next time the trigger is received the composition will be committed.
+		BOOL							_didConvert;
 }
 
--(ConversionEngine*)conversionEngine;
+// These are simple methods for managing our composition and original buffers.
+// They are all simple wrappers around basic NSString methods.
+-(NSMutableString*)composedBuffer;
+-(void)setComposedBuffer:(NSString*)string;
+
+-(NSMutableString*)originalBuffer;
+-(void)originalBufferAppend:(NSString*)string client:(id)sender;
+-(void)setOriginalBuffer:(NSString*)string;
+
+- (BOOL)convert:(NSString*)trigger client:(id)sender;
 
 @end
