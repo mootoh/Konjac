@@ -15,7 +15,6 @@
 		E93074E20A5C2F1200470842 /* NumberInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93074E10A5C2F1200470842 /* NumberInputController.m */; };
 		E93396E90A9A0AD60073E6C4 /* nine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E93396E50A9A0AD50073E6C4 /* nine.tiff */; };
 		E93396F50A9A105E0073E6C4 /* ConversionEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E93396F40A9A105E0073E6C4 /* ConversionEngine.m */; };
-		E999E1590BE8D77E00CAE01B /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = E999E1580BE8D77E00CAE01B /* ReadMe */; };
 		E9C425850BFA0FC90065E4C6 /* currency.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425830BFA0FC90065E4C6 /* currency.tiff */; };
 		E9C425860BFA0FC90065E4C6 /* Decimal.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425840BFA0FC90065E4C6 /* Decimal.tiff */; };
 		E9C4258A0BFA0FD60065E4C6 /* nostyle.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425890BFA0FD60065E4C6 /* nostyle.tiff */; };
@@ -42,7 +41,6 @@
 		E93396E50A9A0AD50073E6C4 /* nine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nine.tiff; sourceTree = "<group>"; };
 		E93396F30A9A105E0073E6C4 /* ConversionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionEngine.h; sourceTree = "<group>"; };
 		E93396F40A9A105E0073E6C4 /* ConversionEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionEngine.m; sourceTree = "<group>"; };
-		E999E1580BE8D77E00CAE01B /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
 		E9C425830BFA0FC90065E4C6 /* currency.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = currency.tiff; sourceTree = "<group>"; };
 		E9C425840BFA0FC90065E4C6 /* Decimal.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Decimal.tiff; sourceTree = "<group>"; };
 		E9C425890BFA0FD60065E4C6 /* nostyle.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nostyle.tiff; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				E999E1580BE8D77E00CAE01B /* ReadMe */,
 			);
 			name = NumberInput;
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				E93396E90A9A0AD60073E6C4 /* nine.tiff in Resources */,
-				E999E1590BE8D77E00CAE01B /* ReadMe in Resources */,
 				E9C425850BFA0FC90065E4C6 /* currency.tiff in Resources */,
 				E9C425860BFA0FC90065E4C6 /* Decimal.tiff in Resources */,
 				E9C4258A0BFA0FD60065E4C6 /* nostyle.tiff in Resources */,
