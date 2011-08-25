@@ -1,6 +1,6 @@
 /*
 
-File:NumberInputApplicationDelegate.m
+File:KonjacApplicationDelegate.h
 
 Abstract: The input method's application delegate object.
 
@@ -47,17 +47,17 @@ POSSIBILITY OF SUCH DAMAGE.
 Copyright (C) 2007 Apple Inc. All Rights Reserved.
 
 */
+#import <Cocoa/Cocoa.h>
+#import "ConversionEngine.h"
 
-#import "NumberInputApplicationDelegate.h"
+// The conversion engine is shared by all the input controllers. For that reason we store it in the application delegate where it 
+// can be accessed by any of the controllers.
+// Note that the ConversionEngine is instantiated automatically because we said to instantiate the engine object in Interface Builder.
 
-
-@implementation NumberInputApplicationDelegate
-
--(ConversionEngine*)conversionEngine
-{
-	return _conversionEngine;
+@interface KonjacApplicationDelegate : NSObject {
+	IBOutlet ConversionEngine*			_conversionEngine;
 }
 
-
+-(ConversionEngine*)conversionEngine;
 
 @end

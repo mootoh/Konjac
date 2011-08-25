@@ -1,6 +1,6 @@
 /*
 
-File:NumberInputController.m
+File:KonjacController.m
 
 Abstract: Number input controller class.
 
@@ -47,12 +47,12 @@ POSSIBILITY OF SUCH DAMAGE.
 Copyright (C) 2007 Apple Inc. All Rights Reserved.
 
 */
-#import "NumberInputController.h"
+#import "KonjacController.h"
 #import "ConversionEngine.h"
-#import "NumberInputApplicationDelegate.h"
+#import "KonjacApplicationDelegate.h"
 
 
-@implementation NumberInputController
+@implementation KonjacController
 
 /*
 Implement one of the three ways to receive input from the client. 

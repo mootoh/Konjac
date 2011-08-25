@@ -12,7 +12,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E93074B70A5C264700470842 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93074B60A5C264700470842 /* InputMethodKit.framework */; };
-		E93074E20A5C2F1200470842 /* NumberInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93074E10A5C2F1200470842 /* NumberInputController.m */; };
+		E93074E20A5C2F1200470842 /* KonjacController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93074E10A5C2F1200470842 /* KonjacController.m */; };
 		E93396E90A9A0AD60073E6C4 /* nine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E93396E50A9A0AD50073E6C4 /* nine.tiff */; };
 		E93396F50A9A105E0073E6C4 /* ConversionEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E93396F40A9A105E0073E6C4 /* ConversionEngine.m */; };
 		E9C425850BFA0FC90065E4C6 /* currency.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425830BFA0FC90065E4C6 /* currency.tiff */; };
@@ -21,7 +21,7 @@
 		E9C4258E0BFA0FE70065E4C6 /* percent.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C4258D0BFA0FE70065E4C6 /* percent.tiff */; };
 		E9C425930BFA10060065E4C6 /* scientific.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425910BFA10060065E4C6 /* scientific.tiff */; };
 		E9C425940BFA10060065E4C6 /* spellout.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425920BFA10060065E4C6 /* spellout.tiff */; };
-		E9FB8BCB0BF0D79B00305C76 /* NumberInputApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB8BCA0BF0D79B00305C76 /* NumberInputApplicationDelegate.m */; };
+		E9FB8BCB0BF0D79B00305C76 /* KonjacApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB8BCA0BF0D79B00305C76 /* KonjacApplicationDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +31,13 @@
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* NumberInput_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberInput_Prefix.pch; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Konjac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konjac_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* NumberInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* Konjac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konjac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9231BF451404F14900FAD032 /* Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Private.h; sourceTree = "<group>"; };
 		E93074B60A5C264700470842 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = /System/Library/Frameworks/InputMethodKit.framework; sourceTree = "<absolute>"; };
-		E93074E00A5C2F1200470842 /* NumberInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberInputController.h; sourceTree = "<group>"; };
-		E93074E10A5C2F1200470842 /* NumberInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberInputController.m; sourceTree = "<group>"; };
+		E93074E00A5C2F1200470842 /* KonjacController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonjacController.h; sourceTree = "<group>"; };
+		E93074E10A5C2F1200470842 /* KonjacController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonjacController.m; sourceTree = "<group>"; };
 		E93396E50A9A0AD50073E6C4 /* nine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nine.tiff; sourceTree = "<group>"; };
 		E93396F30A9A105E0073E6C4 /* ConversionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionEngine.h; sourceTree = "<group>"; };
 		E93396F40A9A105E0073E6C4 /* ConversionEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionEngine.m; sourceTree = "<group>"; };
@@ -47,8 +47,8 @@
 		E9C4258D0BFA0FE70065E4C6 /* percent.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = percent.tiff; sourceTree = "<group>"; };
 		E9C425910BFA10060065E4C6 /* scientific.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = scientific.tiff; sourceTree = "<group>"; };
 		E9C425920BFA10060065E4C6 /* spellout.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = spellout.tiff; sourceTree = "<group>"; };
-		E9FB8BC90BF0D79B00305C76 /* NumberInputApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberInputApplicationDelegate.h; sourceTree = "<group>"; };
-		E9FB8BCA0BF0D79B00305C76 /* NumberInputApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberInputApplicationDelegate.m; sourceTree = "<group>"; };
+		E9FB8BC90BF0D79B00305C76 /* KonjacApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonjacApplicationDelegate.h; sourceTree = "<group>"; };
+		E9FB8BCA0BF0D79B00305C76 /* KonjacApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonjacApplicationDelegate.m; sourceTree = "<group>"; };
 		E9FB8C530BF4A77900305C76 /* InputMethodKeysDictionary.dict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InputMethodKeysDictionary.dict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,12 +68,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E93074E00A5C2F1200470842 /* NumberInputController.h */,
-				E93074E10A5C2F1200470842 /* NumberInputController.m */,
+				E93074E00A5C2F1200470842 /* KonjacController.h */,
+				E93074E10A5C2F1200470842 /* KonjacController.m */,
 				E93396F30A9A105E0073E6C4 /* ConversionEngine.h */,
 				E93396F40A9A105E0073E6C4 /* ConversionEngine.m */,
-				E9FB8BC90BF0D79B00305C76 /* NumberInputApplicationDelegate.h */,
-				E9FB8BCA0BF0D79B00305C76 /* NumberInputApplicationDelegate.m */,
+				E9FB8BC90BF0D79B00305C76 /* KonjacApplicationDelegate.h */,
+				E9FB8BCA0BF0D79B00305C76 /* KonjacApplicationDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -99,12 +99,12 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* NumberInput.app */,
+				8D1107320486CEB800E47090 /* Konjac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* NumberInput */ = {
+		29B97314FDCFA39411CA2CEA /* Konjac */ = {
 			isa = PBXGroup;
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -113,13 +113,13 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			name = NumberInput;
+			name = Konjac;
 			sourceTree = "<group>";
 		};
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* NumberInput_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* Konjac_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				9231BF451404F14900FAD032 /* Private.h */,
 			);
@@ -164,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* NumberInput */ = {
+		8D1107260486CEB800E47090 /* Konjac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "NumberInput" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Konjac" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -176,10 +176,10 @@
 			);
 			dependencies = (
 			);
-			name = NumberInput;
+			name = Konjac;
 			productInstallPath = "$(HOME)/Applications";
-			productName = NumberInput;
-			productReference = 8D1107320486CEB800E47090 /* NumberInput.app */;
+			productName = Konjac;
+			productReference = 8D1107320486CEB800E47090 /* Konjac.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,18 +187,18 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NumberInput" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Konjac" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* NumberInput */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Konjac */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* NumberInput */,
+				8D1107260486CEB800E47090 /* Konjac */,
 			);
 		};
 /* End PBXProject section */
@@ -228,9 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				E93074E20A5C2F1200470842 /* NumberInputController.m in Sources */,
+				E93074E20A5C2F1200470842 /* KonjacController.m in Sources */,
 				E93396F50A9A105E0073E6C4 /* ConversionEngine.m in Sources */,
-				E9FB8BCB0BF0D79B00305C76 /* NumberInputApplicationDelegate.m in Sources */,
+				E9FB8BCB0BF0D79B00305C76 /* KonjacApplicationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +267,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "\"$(LOCAL_LIBRARY_DIR)/Input Methods/\"";
-				PRODUCT_NAME = NumberInput;
+				PRODUCT_NAME = Konjac;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -285,7 +285,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = NumberInput;
+				PRODUCT_NAME = Konjac;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "NumberInput" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Konjac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NumberInput" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Konjac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
