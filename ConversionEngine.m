@@ -83,6 +83,7 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
             line = [line stringByReplacingOccurrencesOfString:@"\"\n" withString:@""];
             ret = [line copy];
         }
+        [jsonString release];
         return ret;
     }
 
@@ -99,9 +100,9 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
             return ret;
 
         NSString *xmlString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        xmlString= [xmlString stringByReplacingOccurrencesOfString:@"<string xmlns=\"http://schemas.microsoft.com/2003/10/Serialization/\">" withString:@""];
-        xmlString= [xmlString stringByReplacingOccurrencesOfString:@"</string>" withString:@""];
-        ret = [xmlString copy];
+        NSString *result = [xmlString stringByReplacingOccurrencesOfString:@"<string xmlns=\"http://schemas.microsoft.com/2003/10/Serialization/\">" withString:@""];
+        result = [result stringByReplacingOccurrencesOfString:@"</string>" withString:@""];
+        ret = [result copy];
         [xmlString release];
 
         return ret;
