@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Konjac</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>Konjac.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.yourcompany.inputmethod.Konjac</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -110,6 +110,6 @@
 		<string>Latn</string>
 	</array>
 	<key>tsInputMethodIconFileKey</key>
-	<string>nine.tiff</string>
+	<string>konjac-32x32.png</string>
 </dict>
 </plist>
