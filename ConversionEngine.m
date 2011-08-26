@@ -83,6 +83,7 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
             line = [line stringByReplacingOccurrencesOfString:@"\"\n" withString:@""];
             ret = [line copy];
         }
+        [jsonString release];
         return ret;
     }
 
