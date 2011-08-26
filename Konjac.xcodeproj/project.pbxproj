@@ -11,6 +11,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D7DE51261407451D006EF097 /* Bing.tif in Resources */ = {isa = PBXBuildFile; fileRef = D7DE51251407451D006EF097 /* Bing.tif */; };
 		E93074B70A5C264700470842 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93074B60A5C264700470842 /* InputMethodKit.framework */; };
 		E93074E20A5C2F1200470842 /* KonjacController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93074E10A5C2F1200470842 /* KonjacController.m */; };
 		E93396E90A9A0AD60073E6C4 /* nine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E93396E50A9A0AD50073E6C4 /* nine.tiff */; };
@@ -35,6 +36,7 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Konjac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konjac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9231BF451404F14900FAD032 /* Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Private.h; sourceTree = "<group>"; };
+		D7DE51251407451D006EF097 /* Bing.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Bing.tif; sourceTree = "<group>"; };
 		E93074B60A5C264700470842 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = /System/Library/Frameworks/InputMethodKit.framework; sourceTree = "<absolute>"; };
 		E93074E00A5C2F1200470842 /* KonjacController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonjacController.h; sourceTree = "<group>"; };
 		E93074E10A5C2F1200470842 /* KonjacController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonjacController.m; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		E93396E20A9A0AAD0073E6C4 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D7DE51251407451D006EF097 /* Bing.tif */,
 				E9C425910BFA10060065E4C6 /* scientific.tiff */,
 				E9C425920BFA10060065E4C6 /* spellout.tiff */,
 				E9C4258D0BFA0FE70065E4C6 /* percent.tiff */,
@@ -217,6 +220,7 @@
 				E9C4258E0BFA0FE70065E4C6 /* percent.tiff in Resources */,
 				E9C425930BFA10060065E4C6 /* scientific.tiff in Resources */,
 				E9C425940BFA10060065E4C6 /* spellout.tiff in Resources */,
+				D7DE51261407451D006EF097 /* Bing.tif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

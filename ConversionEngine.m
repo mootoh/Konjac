@@ -50,9 +50,9 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 #import "ConversionEngine.h"
 #import "Private.h"
 
-#ifndef k_api_key
+#if !(defined(k_api_key) || defined(k_bing_api_key))
 #error "Store your Google API key in Private.h"
-#endif // k_api_key
+#endif
 
 @implementation ConversionEngine
 
@@ -63,27 +63,51 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 
 -(NSString*)convert:(NSString*)string
 {
-    NSString *src = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    src = [NSString stringWithFormat:@"https://www.googleapis.com/language/translate/v2?key=%@&%@&q=%@", k_api_key, translateMode, src];
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:src]];
-    NSURLResponse *res = nil;
-    NSError *err = nil;
-    NSData *data = [NSURLConnection sendSynchronousRequest:req returningResponse:&res error:&err];
-    NSString *ret = @"";
-    if (err != nil)
+    // Using Google Translate API
+    if ([translateMode isEqualToString:k_en_ja] || [translateMode isEqualToString:k_en_fr]) {
+        NSString *src = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        src = [NSString stringWithFormat:@"http://api.microsofttranslator.com/v2/Http.svc/Translate?appId=%@&text=%@&from=en&to=ja", k_bing_api_key, src];
+        NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:src]];
+        NSURLResponse *res = nil;
+        NSError *err = nil;
+        NSData *data = [NSURLConnection sendSynchronousRequest:req returningResponse:&res error:&err];
+        NSString *ret = @"";
+        if (err != nil)
+            return ret;
+        
+        NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSRange match = [jsonString rangeOfString:@"translatedText.*\n" options:NSRegularExpressionSearch];
+        if (match.location != NSNotFound) {
+            NSString *line = [jsonString substringWithRange:match];
+            line = [line stringByReplacingOccurrencesOfString:@"translatedText\": \"" withString:@""];
+            line = [line stringByReplacingOccurrencesOfString:@"\"\n" withString:@""];
+            ret = [line copy];
+        }
         return ret;
-
-    NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSRange match = [jsonString rangeOfString:@"translatedText.*\n" options:NSRegularExpressionSearch];
-    if (match.location != NSNotFound) {
-        NSString *line = [jsonString substringWithRange:match];
-        line = [line stringByReplacingOccurrencesOfString:@"translatedText\": \"" withString:@""];
-        line = [line stringByReplacingOccurrencesOfString:@"\"\n" withString:@""];
-        ret = [line copy];
     }
-    [jsonString release];
 
-    return ret;
+    // Using Bing Translate API
+    if ([translateMode isEqualToString:k_bing_en_ja]) {
+        NSString *src = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        src = [NSString stringWithFormat:@"http://api.microsofttranslator.com/v2/Http.svc/Translate?appId=%@&text=%@&from=en&to=ja", k_bing_api_key, src];
+        NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:src]];
+        NSURLResponse *res = nil;
+        NSError *err = nil;
+        NSData *data = [NSURLConnection sendSynchronousRequest:req returningResponse:&res error:&err];
+        NSString *ret = @"";
+        if (err != nil)
+            return ret;
+
+        NSString *xmlString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        xmlString= [xmlString stringByReplacingOccurrencesOfString:@"<string xmlns=\"http://schemas.microsoft.com/2003/10/Serialization/\">" withString:@""];
+        xmlString= [xmlString stringByReplacingOccurrencesOfString:@"</string>" withString:@""];
+        ret = [xmlString copy];
+        [xmlString release];
+
+        return ret;
+    }
+
+    return @"";
 }
 
 -(NSString *)translateMode

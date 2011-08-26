@@ -11,5 +11,6 @@
 
 // use your Google API key like:
 // #define k_api_key @"abcdefg"
+// #define k_bing_api_key @"abcdefg"
 
 #endif
