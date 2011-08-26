@@ -256,6 +256,9 @@ Here are the three approaches:
 	else if ( [newModeString isEqual:kCurrencyMode] ) {
 		newMode = k_en_fr;
 	}
+    else if ( [newModeString isEqual:kBingMode] ) {
+		newMode = k_bing_en_ja;
+	}
 	
 	if ( currentMode != newMode ) {
 		[[[NSApp delegate] conversionEngine] setTranslateMode:newMode];

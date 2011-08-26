@@ -66,11 +66,33 @@
 				<key>tsInputModeScriptKey</key>
 				<string>smUnicodeScript</string>
 			</dict>
+			<key>com.apple.inputmethod.bing</key>
+			<dict>
+				<key>tsInputModeAlternateMenuIconFileKey</key>
+				<string>Bing.tif</string>
+				<key>tsInputModeDefaultStateKey</key>
+				<true/>
+				<key>tsInputModeIsVisibleKey</key>
+				<true/>
+				<key>tsInputModeKeyEquivalentKey</key>
+				<string>B</string>
+				<key>tsInputModeKeyEquivalentModifiersKey</key>
+				<integer>4608</integer>
+				<key>tsInputModeMenuIconFileKey</key>
+				<string>Bing.tif</string>
+				<key>tsInputModePaletteIconFileKey</key>
+				<string>Bing.tif</string>
+				<key>tsInputModePrimaryInScriptKey</key>
+				<true/>
+				<key>tsInputModeScriptKey</key>
+				<string>smUnicodeScript</string>
+			</dict>
 		</dict>
 		<key>tsVisibleInputModeOrderedArrayKey</key>
 		<array>
 			<string>com.apple.inputmethod.decimal</string>
 			<string>com.apple.inputmethod.currency</string>
+			<string>com.apple.inputmethod.bing</string>
 		</array>
 	</dict>
 	<key>InputMethodConnectionName</key>
