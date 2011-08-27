@@ -80,7 +80,7 @@
 				E9FB8BC90BF0D79B00305C76 /* KonjacApplicationDelegate.h */,
 				E9FB8BCA0BF0D79B00305C76 /* KonjacApplicationDelegate.m */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
@@ -134,12 +134,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E93396E20A9A0AAD0073E6C4 /* images */,
+				E93396E20A9A0AAD0073E6C4 /* Images */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -151,7 +151,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E93396E20A9A0AAD0073E6C4 /* images */ = {
+		E93396E20A9A0AAD0073E6C4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				92A1FEDD14077297004EDF29 /* Konjac.icns */,
@@ -165,7 +165,7 @@
 				E9C425840BFA0FC90065E4C6 /* Decimal.tiff */,
 				E93396E50A9A0AD50073E6C4 /* nine.tiff */,
 			);
-			name = images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
