@@ -245,7 +245,7 @@ Here are the three approaches:
 }
 
 //This method is called by the InputMethodKit when the user as selected a new input mode from the text input menu.
--(void)setValue:(id)value forTag:(unsigned long)tag client:(id)sender
+-(void)setValue:(id)value forTag:(long)tag client:(id)sender
 {
 	NSString*		newModeString = [(NSString*)value retain];
 	NSString*   	currentMode = [[[NSApp delegate] conversionEngine] translateMode];
