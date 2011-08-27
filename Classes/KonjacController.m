@@ -80,6 +80,7 @@ Here are the three approaches:
 {
 		BOOL					inputHandled = NO;
 		if ([string isEqualToString:@"."] || [string isEqualToString:@"!"] || [string isEqualToString:@"?"]) {
+            [self originalBufferAppend:string client:sender];
             inputHandled = [self convert:string client:sender];
 		}
 		else {
@@ -237,7 +238,8 @@ Here are the three approaches:
 			}
 			else {
 				[self commitComposition:sender];
-				[sender insertText:trigger replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+                // Konjac doesn't require to append the trigger text.
+				//[sender insertText:trigger replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
 			}
 			handled = YES;
 	}
