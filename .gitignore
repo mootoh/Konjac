@@ -1,0 +1,12 @@
+.DS_Store
+build
+*.xcodeproj/*.perspective
+*.xcodeproj/*.perspectivev3
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.mode1
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.mode2v3
+*.xcodeproj/*.xcworkspace
+xcuserdata
+Snapshots
+Private.h
