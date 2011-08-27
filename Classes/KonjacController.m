@@ -79,12 +79,13 @@ Here are the three approaches:
 -(BOOL)inputText:(NSString*)string client:(id)sender
 {
 		BOOL					inputHandled = NO;
-		if (! [string isEqualToString:@"."] ) {
-			[self originalBufferAppend:string client:sender];
-			inputHandled = YES;
+		if ([string isEqualToString:@"."] || [string isEqualToString:@"!"] || [string isEqualToString:@"?"]) {
+            [self originalBufferAppend:string client:sender];
+            inputHandled = [self convert:string client:sender];
 		}
 		else {
-			inputHandled = [self convert:string client:sender];
+            [self originalBufferAppend:string client:sender];
+			inputHandled = YES;
 		}
         return inputHandled;
 }
@@ -191,14 +192,14 @@ Here are the three approaches:
 - (void)deleteBackward:(id)sender
 {
 	NSMutableString*		originalText = [self originalBuffer];
-	NSString*				convertedString;
+	//NSString*				convertedString;
 
 	if ( _insertionIndex > 0 && _insertionIndex <= [originalText length] ) {
 		--_insertionIndex;
 		[originalText deleteCharactersInRange:NSMakeRange(_insertionIndex,1)];
-		convertedString = [[[NSApp delegate] conversionEngine] convert:originalText];
-		[self setComposedBuffer:convertedString];
-		[sender setMarkedText:convertedString selectionRange:NSMakeRange(_insertionIndex, 0) replacementRange:NSMakeRange(NSNotFound,NSNotFound)];
+		//convertedString = [[[NSApp delegate] conversionEngine] convert:originalText];
+		[self setComposedBuffer:originalText];
+		[sender setMarkedText:originalText selectionRange:NSMakeRange(_insertionIndex, 0) replacementRange:NSMakeRange(NSNotFound,NSNotFound)];
 	}
 }
 
@@ -215,8 +216,9 @@ Here are the three approaches:
 	if ( _didConvert && convertedString && [convertedString length] > 0  ) {
 		
 		
-			NSString*		completeString = [convertedString stringByAppendingString:trigger];
-			[sender insertText:completeString replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+			//NSString*		completeString = [convertedString stringByAppendingString:trigger];
+			//[sender insertText:completeString replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+            [sender insertText:convertedString replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
 			
 			[self setComposedBuffer:@""];
 			[self setOriginalBuffer:@""];
@@ -236,7 +238,8 @@ Here are the three approaches:
 			}
 			else {
 				[self commitComposition:sender];
-				[sender insertText:trigger replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+                // Konjac doesn't require to append the trigger text.
+				//[sender insertText:trigger replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
 			}
 			handled = YES;
 	}
@@ -244,7 +247,7 @@ Here are the three approaches:
 }
 
 //This method is called by the InputMethodKit when the user as selected a new input mode from the text input menu.
--(void)setValue:(id)value forTag:(unsigned long)tag client:(id)sender
+-(void)setValue:(id)value forTag:(long)tag client:(id)sender
 {
 	NSString*		newModeString = [(NSString*)value retain];
 	NSString*   	currentMode = [[[NSApp delegate] conversionEngine] translateMode];

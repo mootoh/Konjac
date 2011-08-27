@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,7 +35,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Konjac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konjac_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Konjac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konjac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9231BF451404F14900FAD032 /* Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Private.h; sourceTree = "<group>"; };
 		92A1FEDD14077297004EDF29 /* Konjac.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Konjac.icns; sourceTree = "<group>"; };
@@ -55,7 +55,6 @@
 		E9C425920BFA10060065E4C6 /* spellout.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = spellout.tiff; sourceTree = "<group>"; };
 		E9FB8BC90BF0D79B00305C76 /* KonjacApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonjacApplicationDelegate.h; sourceTree = "<group>"; };
 		E9FB8BCA0BF0D79B00305C76 /* KonjacApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonjacApplicationDelegate.m; sourceTree = "<group>"; };
-		E9FB8C530BF4A77900305C76 /* InputMethodKeysDictionary.dict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InputMethodKeysDictionary.dict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +80,7 @@
 				E9FB8BC90BF0D79B00305C76 /* KonjacApplicationDelegate.h */,
 				E9FB8BCA0BF0D79B00305C76 /* KonjacApplicationDelegate.m */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
@@ -128,6 +127,7 @@
 				32CA4F630368D1EE00C91783 /* Konjac_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				9231BF451404F14900FAD032 /* Private.h */,
+				8D1107310486CEB800E47090 /* Info.plist */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -135,13 +135,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E93396E20A9A0AAD0073E6C4 /* images */,
-				8D1107310486CEB800E47090 /* Info.plist */,
+				E93396E20A9A0AAD0073E6C4 /* Images */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
-				E9FB8C530BF4A77900305C76 /* InputMethodKeysDictionary.dict */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -153,7 +151,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E93396E20A9A0AAD0073E6C4 /* images */ = {
+		E93396E20A9A0AAD0073E6C4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				92A1FEDD14077297004EDF29 /* Konjac.icns */,
@@ -167,7 +165,7 @@
 				E9C425840BFA0FC90065E4C6 /* Decimal.tiff */,
 				E93396E50A9A0AD50073E6C4 /* nine.tiff */,
 			);
-			name = images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +178,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				5478505F1408A37F001956AE /* Run Install Script */,
 			);
 			buildRules = (
 			);
@@ -196,8 +195,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Konjac" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -233,6 +235,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5478505F1408A37F001956AE /* Run Install Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Install Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INSTALL_PATH=\"${USER_LIBRARY_DIR}/Input Methods/${FULL_PRODUCT_NAME}\"\n\n# clean up any previous products/symbolic links in the SIMBL Plugins folder\nif [ -a \"${INSTALL_PATH}\" ]; then\n  rm -Rf \"${INSTALL_PATH}\"\nfi\n\n# Depending on the build configuration, either copy or link to the most recent product\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n  # if we're debugging, add a symbolic link to the plug-in\n  ln -sf \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"${INSTALL_PATH}\"\nelif [ \"${CONFIGURATION}\" == \"Release\" ]; then\n  # if we're compiling for release, just copy the plugin to the SIMBL Plugins folder\n  cp -Rfv \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"${INSTALL_PATH}\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
@@ -273,12 +292,9 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "\"$(LOCAL_LIBRARY_DIR)/Input Methods/\"";
+				INSTALL_PATH = "\"$(USER_LIBRARY_DIR)/Input Methods/\"";
 				PRODUCT_NAME = Konjac;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
@@ -288,15 +304,9 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = "\"$(USER_LIBRARY_DIR)/Input Methods/\"";
 				PRODUCT_NAME = Konjac;
 				WRAPPER_EXTENSION = app;
 			};
@@ -305,20 +315,22 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
