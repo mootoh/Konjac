@@ -24,7 +24,7 @@
 	<dict>
 		<key>tsInputModeListKey</key>
 		<dict>
-			<key>com.apple.inputmethod.bing</key>
+			<key>com.inputmethod.Konjac.bing</key>
 			<dict>
 				<key>tsInputModeAlternateMenuIconFileKey</key>
 				<string>Bing.tif</string>
@@ -48,11 +48,11 @@
 		</dict>
 		<key>tsVisibleInputModeOrderedArrayKey</key>
 		<array>
-			<string>com.apple.inputmethod.bing</string>
+			<string>com.inputmethod.Konjac.bing</string>
 		</array>
 	</dict>
 	<key>InputMethodConnectionName</key>
-	<string>Konjac_1_Connection</string>
+	<string>KonjacConnection</string>
 	<key>InputMethodServerControllerClass</key>
 	<string>KonjacController</string>
 	<key>LSBackgroundOnly</key>

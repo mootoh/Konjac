@@ -52,7 +52,7 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 
 //Each input method needs a unique connection name.
 //Note that periods and spaces are not allowed in the connection name.
-const NSString *kConnectionName = @"Konjac_1_Connection";
+const NSString *kConnectionName = @"KonjacConnection";
 
 //let this be a global so our application controller delegate can access it easily
 IMKServer *server;

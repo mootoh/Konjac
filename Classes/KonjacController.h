@@ -50,7 +50,7 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 #import <Cocoa/Cocoa.h>
 #import <InputMethodKit/InputMethodKit.h>
 
-const NSString* kBingMode = @"com.apple.inputmethod.bing";
+const NSString* kBingMode = @"com.inputmethod.Konjac.bing";
 
 @interface KonjacController : IMKInputController {
   //_composedBuffer contains text that the input method has converted
