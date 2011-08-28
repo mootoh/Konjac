@@ -253,13 +253,7 @@ Here are the three approaches:
 	NSString*   	currentMode = [[[NSApp delegate] conversionEngine] translateMode];
     NSString *newMode;
 	
-	if ( [newModeString isEqual:kDecimalMode] ) {
-		newMode = k_en_ja;
-	}
-	else if ( [newModeString isEqual:kCurrencyMode] ) {
-		newMode = k_en_fr;
-	}
-    else if ( [newModeString isEqual:kBingMode] ) {
+	if ( [newModeString isEqual:kBingMode] ) {
 		newMode = k_bing_en_ja;
 	}
 	

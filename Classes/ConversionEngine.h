@@ -49,8 +49,6 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 */
 #import <Cocoa/Cocoa.h>
 
-#define k_en_ja @"source=en&target=ja"
-#define k_en_fr @"source=en&target=fr"
 #define k_bing_en_ja @"from=en&to=ja"
 
 /*!
