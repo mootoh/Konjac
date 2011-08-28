@@ -6,7 +6,7 @@ Abstract: Class declaration for a conversion engine object.
 
 Version: 1.0
 
-Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
+Disclaimer: IMPORTANT:  This Apple software is supplied to you by
 Apple Inc. ("Apple") in consideration of your agreement to the
 following terms, and your use, installation, modification or
 redistribution of this Apple software constitutes acceptance of these
@@ -20,8 +20,8 @@ license, under Apple's copyrights in this original Apple software (the
 Software, with or without modifications, in source and/or binary forms;
 provided that if you redistribute the Apple Software in its entirety and
 without modifications, you must retain this notice and the following
-text and disclaimers in all such redistributions of the Apple Software. 
-Neither the name, trademarks, service marks or logos of Apple Inc. 
+text and disclaimers in all such redistributions of the Apple Software.
+Neither the name, trademarks, service marks or logos of Apple Inc.
 may be used to endorse or promote products derived from the Apple
 Software without specific prior written permission from Apple.  Except
 as expressly stated in this notice, no other rights or licenses, express
@@ -52,27 +52,24 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 #define k_bing_en_ja @"from=en&to=ja"
 
 /*!
-    @class
-    @abstract    Sample Conversion Engine
-    @discussion  It is not necessary to have a separate object.  It is done here to demonstrate how it is possible to modularize your input method.
-				 
-				 This object uses an NSNumberFormatter to format input text.  The single formatter is shared between all input sessions.
-				 The ConversionEngine also uses an NSCharacterSet that determines how the output number should be formatted.
+@class
+@abstract Sample Conversion Engine
+@discussion It is not necessary to have a separate object.
+It is done here to demonstrate how it is possible to modularize your input method.
+This object uses an NSNumberFormatter to format input text.
+The single formatter is shared between all input sessions.
+The ConversionEngine also uses an NSCharacterSet that determines how the output number should be formatted.
 */
-
 @interface ConversionEngine : NSObject {
-    NSString *translateMode;
+  NSString *translateMode;
 }
 
-/*
-	@method
-	@abstract		Convert the input text.
-	@discussion		convert takes the input text buffer as input a returns a string that has been formatted to a given number format.
+/*!
+@method
+@abstract Convert the input text.
+@discussion convert takes the input text buffer as input a returns a string that has been formatted to a given number format.
 */
 -(NSString*)convert:(NSString*)string;
-
 -(NSString *)translateMode;
-
 -(void)setTranslateMode:(NSString *)mode;
-
 @end

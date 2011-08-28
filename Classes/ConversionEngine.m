@@ -6,7 +6,7 @@ Abstract: A simple conversion engine.  This converts number strings into one of 
 
 Version: 1.0
 
-Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
+Disclaimer: IMPORTANT:  This Apple software is supplied to you by
 Apple Inc. ("Apple") in consideration of your agreement to the
 following terms, and your use, installation, modification or
 redistribution of this Apple software constitutes acceptance of these
@@ -20,8 +20,8 @@ license, under Apple's copyrights in this original Apple software (the
 Software, with or without modifications, in source and/or binary forms;
 provided that if you redistribute the Apple Software in its entirety and
 without modifications, you must retain this notice and the following
-text and disclaimers in all such redistributions of the Apple Software. 
-Neither the name, trademarks, service marks or logos of Apple Inc. 
+text and disclaimers in all such redistributions of the Apple Software.
+Neither the name, trademarks, service marks or logos of Apple Inc.
 may be used to endorse or promote products derived from the Apple
 Software without specific prior written permission from Apple.  Except
 as expressly stated in this notice, no other rights or licenses, express
@@ -55,46 +55,41 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 #endif
 
 @implementation ConversionEngine
-
--(void)awakeFromNib
-{
+-(void)awakeFromNib {
     [self setTranslateMode:k_bing_en_ja];
 }
 
--(NSString*)convert:(NSString*)string
-{
-    // Using Bing Translate API
-    if ([translateMode isEqualToString:k_bing_en_ja]) {
-        NSString *src = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        src = [NSString stringWithFormat:@"http://api.microsofttranslator.com/v2/Http.svc/Translate?appId=%@&text=%@&from=en&to=ja", k_bing_api_key, src];
-        NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:src]];
-        NSURLResponse *res = nil;
-        NSError *err = nil;
-        NSData *data = [NSURLConnection sendSynchronousRequest:req returningResponse:&res error:&err];
-        NSString *ret = @"";
-        if (err != nil)
-            return ret;
-
-        NSString *xmlString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        NSString *result = [xmlString stringByReplacingOccurrencesOfString:@"<string xmlns=\"http://schemas.microsoft.com/2003/10/Serialization/\">" withString:@""];
-        result = [result stringByReplacingOccurrencesOfString:@"</string>" withString:@""];
-        ret = [result copy];
-        [xmlString release];
-
-        return ret;
+-(NSString*)convert:(NSString*)string {
+  // Using Bing Translate API
+  if ([translateMode isEqualToString:k_bing_en_ja]) {
+    NSString *src = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    src = [NSString stringWithFormat:@"http://api.microsofttranslator.com/v2/Http.svc/Translate?appId=%@&text=%@&from=en&to=ja", k_bing_api_key, src];
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:src]];
+    NSURLResponse *res = nil;
+    NSError *err = nil;
+    NSData *data = [NSURLConnection sendSynchronousRequest:req returningResponse:&res error:&err];
+    NSString *ret = @"";
+    if (err != nil) {
+      return ret;
     }
 
-    return @"";
+    NSString *xmlString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSString *result = [xmlString stringByReplacingOccurrencesOfString:@"<string xmlns=\"http://schemas.microsoft.com/2003/10/Serialization/\">" withString:@""];
+    result = [result stringByReplacingOccurrencesOfString:@"</string>" withString:@""];
+    ret = [result copy];
+    [xmlString release];
+
+    return ret;
+  }
+
+  return @"";
 }
 
--(NSString *)translateMode
-{
-    return translateMode;
+-(NSString *)translateMode {
+  return translateMode;
 }
 
--(void)setTranslateMode:(NSString *)mode;
-{
-	translateMode = mode;
+-(void)setTranslateMode:(NSString *)mode {
+  translateMode = mode;
 }
-
 @end
