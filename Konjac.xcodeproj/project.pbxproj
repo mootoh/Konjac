@@ -30,7 +30,7 @@
 		32CA4F630368D1EE00C91783 /* Konjac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konjac_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Konjac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konjac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9231BF451404F14900FAD032 /* Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Private.h; sourceTree = "<group>"; };
+		9231BF451404F14900FAD032 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		92A1FEDD14077297004EDF29 /* Konjac.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Konjac.icns; sourceTree = "<group>"; };
 		92A1FEDE14077297004EDF29 /* konjac-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "konjac-32x32.png"; sourceTree = "<group>"; };
 		D7DE51251407451D006EF097 /* Bing.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Bing.tif; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* Konjac_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				9231BF451404F14900FAD032 /* Private.h */,
+				9231BF451404F14900FAD032 /* APIKey.h */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
 			name = "Other Sources";

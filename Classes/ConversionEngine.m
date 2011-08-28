@@ -48,7 +48,7 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 
 */
 #import "ConversionEngine.h"
-#import "Private.h"
+#import "APIKey.h"
 
 #if !defined(k_bing_api_key)
 #error "Please set your Bing API key in Private.h, see Private.h-template file."
