@@ -9,4 +9,4 @@ build
 *.xcodeproj/*.xcworkspace
 xcuserdata
 Snapshots
-Private.h
+APIKey.h

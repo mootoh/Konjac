@@ -6,7 +6,7 @@ Abstract: Input controller header file.
 
 Version: 1.0
 
-Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
+Disclaimer: IMPORTANT:  This Apple software is supplied to you by
 Apple Inc. ("Apple") in consideration of your agreement to the
 following terms, and your use, installation, modification or
 redistribution of this Apple software constitutes acceptance of these
@@ -20,8 +20,8 @@ license, under Apple's copyrights in this original Apple software (the
 Software, with or without modifications, in source and/or binary forms;
 provided that if you redistribute the Apple Software in its entirety and
 without modifications, you must retain this notice and the following
-text and disclaimers in all such redistributions of the Apple Software. 
-Neither the name, trademarks, service marks or logos of Apple Inc. 
+text and disclaimers in all such redistributions of the Apple Software.
+Neither the name, trademarks, service marks or logos of Apple Inc.
 may be used to endorse or promote products derived from the Apple
 Software without specific prior written permission from Apple.  Except
 as expressly stated in this notice, no other rights or licenses, express
@@ -50,24 +50,18 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 #import <Cocoa/Cocoa.h>
 #import <InputMethodKit/InputMethodKit.h>
 
-const NSString* kDecimalMode = @"com.apple.inputmethod.decimal";
-const NSString* kCurrencyMode = @"com.apple.inputmethod.currency";
-const NSString* kPercentMode = @"com.apple.inputmethod.percent";
-const NSString* kScientificMode = @"com.apple.inputmethod.scientific";
-const NSString* kSpelloutMode = @"com.apple.inputmethod.spellout";
-const NSString* kBingMode = @"com.apple.inputmethod.bing";
+const NSString* kBingMode = @"com.inputmethod.Konjac.bing";
 
 @interface KonjacController : IMKInputController {
-		
-		//_composedBuffer contains text that the input method has converted
-		NSMutableString*				_composedBuffer;
-		//_original buffer contains the text has it was received from user input.
-		NSMutableString*				_originalBuffer;
-		//used to mark where text is being inserted in the _composedBuffer
-		NSInteger						_insertionIndex;
-		//This flag indicates that the original text was converted once in response to a trigger (space key)
-		//the next time the trigger is received the composition will be committed.
-		BOOL							_didConvert;
+  //_composedBuffer contains text that the input method has converted
+  NSMutableString *_composedBuffer;
+  //_original buffer contains the text has it was received from user input.
+  NSMutableString *_originalBuffer;
+  //used to mark where text is being inserted in the _composedBuffer
+  NSInteger _insertionIndex;
+  //This flag indicates that the original text was converted once in response to a trigger (space key)
+  //the next time the trigger is received the composition will be committed.
+  BOOL _didConvert;
 }
 
 // These are simple methods for managing our composition and original buffers.
@@ -80,5 +74,4 @@ const NSString* kBingMode = @"com.apple.inputmethod.bing";
 -(void)setOriginalBuffer:(NSString*)string;
 
 - (BOOL)convert:(NSString*)trigger client:(id)sender;
-
 @end

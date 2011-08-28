@@ -6,7 +6,7 @@ Abstract: The input method's application delegate object.
 
 Version: 1.0
 
-Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
+Disclaimer: IMPORTANT:  This Apple software is supplied to you by
 Apple Inc. ("Apple") in consideration of your agreement to the
 following terms, and your use, installation, modification or
 redistribution of this Apple software constitutes acceptance of these
@@ -20,8 +20,8 @@ license, under Apple's copyrights in this original Apple software (the
 Software, with or without modifications, in source and/or binary forms;
 provided that if you redistribute the Apple Software in its entirety and
 without modifications, you must retain this notice and the following
-text and disclaimers in all such redistributions of the Apple Software. 
-Neither the name, trademarks, service marks or logos of Apple Inc. 
+text and disclaimers in all such redistributions of the Apple Software.
+Neither the name, trademarks, service marks or logos of Apple Inc.
 may be used to endorse or promote products derived from the Apple
 Software without specific prior written permission from Apple.  Except
 as expressly stated in this notice, no other rights or licenses, express
@@ -50,14 +50,14 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 #import <Cocoa/Cocoa.h>
 #import "ConversionEngine.h"
 
-// The conversion engine is shared by all the input controllers. For that reason we store it in the application delegate where it 
-// can be accessed by any of the controllers.
-// Note that the ConversionEngine is instantiated automatically because we said to instantiate the engine object in Interface Builder.
-
+/*
+The conversion engine is shared by all the input controllers. For that reason we store it in the application delegate where it
+can be accessed by any of the controllers.
+Note that the ConversionEngine is instantiated automatically because we said to instantiate the engine object in Interface Builder.
+*/
 @interface KonjacApplicationDelegate : NSObject {
-	IBOutlet ConversionEngine*			_conversionEngine;
+  IBOutlet ConversionEngine *_conversionEngine;
 }
 
 -(ConversionEngine*)conversionEngine;
-
 @end

@@ -6,7 +6,7 @@ Abstract: main entry for number input input method.
 
 Version: 1.0
 
-Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
+Disclaimer: IMPORTANT:  This Apple software is supplied to you by
 Apple Inc. ("Apple") in consideration of your agreement to the
 following terms, and your use, installation, modification or
 redistribution of this Apple software constitutes acceptance of these
@@ -20,8 +20,8 @@ license, under Apple's copyrights in this original Apple software (the
 Software, with or without modifications, in source and/or binary forms;
 provided that if you redistribute the Apple Software in its entirety and
 without modifications, you must retain this notice and the following
-text and disclaimers in all such redistributions of the Apple Software. 
-Neither the name, trademarks, service marks or logos of Apple Inc. 
+text and disclaimers in all such redistributions of the Apple Software.
+Neither the name, trademarks, service marks or logos of Apple Inc.
 may be used to endorse or promote products derived from the Apple
 Software without specific prior written permission from Apple.  Except
 as expressly stated in this notice, no other rights or licenses, express
@@ -50,29 +50,26 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 #import <Cocoa/Cocoa.h>
 #import <InputMethodKit/InputMethodKit.h>
 
-//Each input method needs a unique connection name. 
+//Each input method needs a unique connection name.
 //Note that periods and spaces are not allowed in the connection name.
-const NSString* kConnectionName = @"Konjac_1_Connection";
+const NSString *kConnectionName = @"KonjacConnection";
 
 //let this be a global so our application controller delegate can access it easily
-IMKServer*       server;
+IMKServer *server;
 
-int main(int argc, char *argv[])
-{
-    
-    NSString*       identifier;
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
-	//find the bundle identifier and then initialize the input method server
-    identifier = [[NSBundle mainBundle] bundleIdentifier];
-    server = [[IMKServer alloc] initWithName:(NSString*)kConnectionName bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
-	
-    //load the bundle explicitly because in this case the input method is a background only application 
-	[NSBundle loadNibNamed:@"MainMenu" owner:[NSApplication sharedApplication]];
-	
-	//finally run everything
-	[[NSApplication sharedApplication] run];
-	
-    [pool release];
-    return 0;
+int main(int argc, char *argv[]) {
+  NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+
+  //find the bundle identifier and then initialize the input method server
+  NSString *identifier = [[NSBundle mainBundle] bundleIdentifier];
+  server = [[IMKServer alloc] initWithName:(NSString*)kConnectionName bundleIdentifier:identifier];
+
+  //load the bundle explicitly because in this case the input method is a background only application
+  [NSBundle loadNibNamed:@"MainMenu" owner:[NSApplication sharedApplication]];
+
+  //finally run everything
+  [[NSApplication sharedApplication] run];
+
+  [pool release];
+  return 0;
 }

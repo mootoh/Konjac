@@ -16,14 +16,7 @@
 		D7DE51261407451D006EF097 /* Bing.tif in Resources */ = {isa = PBXBuildFile; fileRef = D7DE51251407451D006EF097 /* Bing.tif */; };
 		E93074B70A5C264700470842 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93074B60A5C264700470842 /* InputMethodKit.framework */; };
 		E93074E20A5C2F1200470842 /* KonjacController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93074E10A5C2F1200470842 /* KonjacController.m */; };
-		E93396E90A9A0AD60073E6C4 /* nine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E93396E50A9A0AD50073E6C4 /* nine.tiff */; };
 		E93396F50A9A105E0073E6C4 /* ConversionEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E93396F40A9A105E0073E6C4 /* ConversionEngine.m */; };
-		E9C425850BFA0FC90065E4C6 /* currency.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425830BFA0FC90065E4C6 /* currency.tiff */; };
-		E9C425860BFA0FC90065E4C6 /* Decimal.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425840BFA0FC90065E4C6 /* Decimal.tiff */; };
-		E9C4258A0BFA0FD60065E4C6 /* nostyle.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425890BFA0FD60065E4C6 /* nostyle.tiff */; };
-		E9C4258E0BFA0FE70065E4C6 /* percent.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C4258D0BFA0FE70065E4C6 /* percent.tiff */; };
-		E9C425930BFA10060065E4C6 /* scientific.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425910BFA10060065E4C6 /* scientific.tiff */; };
-		E9C425940BFA10060065E4C6 /* spellout.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E9C425920BFA10060065E4C6 /* spellout.tiff */; };
 		E9FB8BCB0BF0D79B00305C76 /* KonjacApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB8BCA0BF0D79B00305C76 /* KonjacApplicationDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -37,22 +30,15 @@
 		32CA4F630368D1EE00C91783 /* Konjac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konjac_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Konjac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konjac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9231BF451404F14900FAD032 /* Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Private.h; sourceTree = "<group>"; };
+		9231BF451404F14900FAD032 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		92A1FEDD14077297004EDF29 /* Konjac.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Konjac.icns; sourceTree = "<group>"; };
 		92A1FEDE14077297004EDF29 /* konjac-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "konjac-32x32.png"; sourceTree = "<group>"; };
 		D7DE51251407451D006EF097 /* Bing.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Bing.tif; sourceTree = "<group>"; };
 		E93074B60A5C264700470842 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = /System/Library/Frameworks/InputMethodKit.framework; sourceTree = "<absolute>"; };
 		E93074E00A5C2F1200470842 /* KonjacController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonjacController.h; sourceTree = "<group>"; };
 		E93074E10A5C2F1200470842 /* KonjacController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonjacController.m; sourceTree = "<group>"; };
-		E93396E50A9A0AD50073E6C4 /* nine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nine.tiff; sourceTree = "<group>"; };
 		E93396F30A9A105E0073E6C4 /* ConversionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionEngine.h; sourceTree = "<group>"; };
 		E93396F40A9A105E0073E6C4 /* ConversionEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionEngine.m; sourceTree = "<group>"; };
-		E9C425830BFA0FC90065E4C6 /* currency.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = currency.tiff; sourceTree = "<group>"; };
-		E9C425840BFA0FC90065E4C6 /* Decimal.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Decimal.tiff; sourceTree = "<group>"; };
-		E9C425890BFA0FD60065E4C6 /* nostyle.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nostyle.tiff; sourceTree = "<group>"; };
-		E9C4258D0BFA0FE70065E4C6 /* percent.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = percent.tiff; sourceTree = "<group>"; };
-		E9C425910BFA10060065E4C6 /* scientific.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = scientific.tiff; sourceTree = "<group>"; };
-		E9C425920BFA10060065E4C6 /* spellout.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = spellout.tiff; sourceTree = "<group>"; };
 		E9FB8BC90BF0D79B00305C76 /* KonjacApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonjacApplicationDelegate.h; sourceTree = "<group>"; };
 		E9FB8BCA0BF0D79B00305C76 /* KonjacApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonjacApplicationDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +112,7 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* Konjac_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				9231BF451404F14900FAD032 /* Private.h */,
+				9231BF451404F14900FAD032 /* APIKey.h */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
 			name = "Other Sources";
@@ -157,13 +143,6 @@
 				92A1FEDD14077297004EDF29 /* Konjac.icns */,
 				92A1FEDE14077297004EDF29 /* konjac-32x32.png */,
 				D7DE51251407451D006EF097 /* Bing.tif */,
-				E9C425910BFA10060065E4C6 /* scientific.tiff */,
-				E9C425920BFA10060065E4C6 /* spellout.tiff */,
-				E9C4258D0BFA0FE70065E4C6 /* percent.tiff */,
-				E9C425890BFA0FD60065E4C6 /* nostyle.tiff */,
-				E9C425830BFA0FC90065E4C6 /* currency.tiff */,
-				E9C425840BFA0FC90065E4C6 /* Decimal.tiff */,
-				E93396E50A9A0AD50073E6C4 /* nine.tiff */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -221,13 +200,6 @@
 			files = (
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				E93396E90A9A0AD60073E6C4 /* nine.tiff in Resources */,
-				E9C425850BFA0FC90065E4C6 /* currency.tiff in Resources */,
-				E9C425860BFA0FC90065E4C6 /* Decimal.tiff in Resources */,
-				E9C4258A0BFA0FD60065E4C6 /* nostyle.tiff in Resources */,
-				E9C4258E0BFA0FE70065E4C6 /* percent.tiff in Resources */,
-				E9C425930BFA10060065E4C6 /* scientific.tiff in Resources */,
-				E9C425940BFA10060065E4C6 /* spellout.tiff in Resources */,
 				D7DE51261407451D006EF097 /* Bing.tif in Resources */,
 				92A1FEDF14077297004EDF29 /* Konjac.icns in Resources */,
 				92A1FEE014077297004EDF29 /* konjac-32x32.png in Resources */,
@@ -249,7 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "INSTALL_PATH=\"${USER_LIBRARY_DIR}/Input Methods/${FULL_PRODUCT_NAME}\"\n\n# clean up any previous products/symbolic links in the SIMBL Plugins folder\nif [ -a \"${INSTALL_PATH}\" ]; then\n  rm -Rf \"${INSTALL_PATH}\"\nfi\n\n# Depending on the build configuration, either copy or link to the most recent product\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n  # if we're debugging, add a symbolic link to the plug-in\n  ln -sf \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"${INSTALL_PATH}\"\nelif [ \"${CONFIGURATION}\" == \"Release\" ]; then\n  # if we're compiling for release, just copy the plugin to the SIMBL Plugins folder\n  cp -Rfv \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"${INSTALL_PATH}\"\nfi";
+			shellScript = "INSTALL_PATH=\"${USER_LIBRARY_DIR}/Input Methods/${FULL_PRODUCT_NAME}\"\n\n# clean up any previous products/symbolic links in the SIMBL Plugins folder\nif [ -a \"${INSTALL_PATH}\" ]; then\n  rm -Rf \"${INSTALL_PATH}\"\nfi\n\n# Depending on the build configuration, either copy or link to the most recent product\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n  # if we're debugging, add a symbolic link to the plug-in\n  ln -sf \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"${INSTALL_PATH}\"\nelif [ \"${CONFIGURATION}\" == \"Release\" ]; then\n  # if we're compiling for release, just copy the plugin to the SIMBL Plugins folder\n  cp -Rfv \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"${INSTALL_PATH}\"\nfi\n\n# Kill existing input method process.\nPID=$(ps auxww|grep \"${FULL_PRODUCT_NAME}\"|grep -v grep|awk '{print $2}')\nif test \"${PID}\" -gt 1 >/dev/null 2>&1; then\n  echo \"Found ${FULL_PRODUCT_NAME} process, Kill ${PID}.\"\n  kill $PID\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
