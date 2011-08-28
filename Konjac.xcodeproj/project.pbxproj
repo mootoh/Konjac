@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		549BE87C140A3C26000D935B /* Konjac_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 549BE87B140A3C26000D935B /* Konjac_16.png */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		92A1FEDF14077297004EDF29 /* Konjac.icns in Resources */ = {isa = PBXBuildFile; fileRef = 92A1FEDD14077297004EDF29 /* Konjac.icns */; };
-		92A1FEE014077297004EDF29 /* konjac-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A1FEDE14077297004EDF29 /* konjac-32x32.png */; };
 		D7DE51261407451D006EF097 /* Bing.tif in Resources */ = {isa = PBXBuildFile; fileRef = D7DE51251407451D006EF097 /* Bing.tif */; };
 		E93074B70A5C264700470842 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93074B60A5C264700470842 /* InputMethodKit.framework */; };
 		E93074E20A5C2F1200470842 /* KonjacController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93074E10A5C2F1200470842 /* KonjacController.m */; };
@@ -28,11 +28,11 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Konjac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konjac_Prefix.pch; sourceTree = "<group>"; };
+		549BE87B140A3C26000D935B /* Konjac_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Konjac_16.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Konjac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konjac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9231BF451404F14900FAD032 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		92A1FEDD14077297004EDF29 /* Konjac.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Konjac.icns; sourceTree = "<group>"; };
-		92A1FEDE14077297004EDF29 /* konjac-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "konjac-32x32.png"; sourceTree = "<group>"; };
 		D7DE51251407451D006EF097 /* Bing.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Bing.tif; sourceTree = "<group>"; };
 		E93074B60A5C264700470842 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = /System/Library/Frameworks/InputMethodKit.framework; sourceTree = "<absolute>"; };
 		E93074E00A5C2F1200470842 /* KonjacController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonjacController.h; sourceTree = "<group>"; };
@@ -140,8 +140,8 @@
 		E93396E20A9A0AAD0073E6C4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				549BE87B140A3C26000D935B /* Konjac_16.png */,
 				92A1FEDD14077297004EDF29 /* Konjac.icns */,
-				92A1FEDE14077297004EDF29 /* konjac-32x32.png */,
 				D7DE51251407451D006EF097 /* Bing.tif */,
 			);
 			path = Images;
@@ -202,7 +202,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				D7DE51261407451D006EF097 /* Bing.tif in Resources */,
 				92A1FEDF14077297004EDF29 /* Konjac.icns in Resources */,
-				92A1FEE014077297004EDF29 /* konjac-32x32.png in Resources */,
+				549BE87C140A3C26000D935B /* Konjac_16.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
