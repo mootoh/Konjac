@@ -4,7 +4,8 @@ release: build
 	mkdir Konjac
 	cp -a build/Release/Konjac.app Konjac/Konjac.app
 	cp Resources/README.txt Konjac/
-	zip -r Konjac.zip Konjac
+	ln -s /Library/Input\ Methods Konjac/Input\ Methods
+	zip -y -r Konjac.zip Konjac
 
 build:
 	xcodebuild -configuration Release
