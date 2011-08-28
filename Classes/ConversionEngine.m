@@ -58,7 +58,7 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 
 -(void)awakeFromNib
 {
-    [self setTranslateMode:k_en_ja];
+    [self setTranslateMode:k_bing_en_ja];
 }
 
 -(NSString*)convert:(NSString*)string
