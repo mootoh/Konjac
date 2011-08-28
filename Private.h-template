@@ -9,8 +9,9 @@
 #ifndef NumberInput_Private_h
 #define NumberInput_Private_h
 
-// use your Google API key like:
-// #define k_api_key @"abcdefg"
-// #define k_bing_api_key @"abcdefg"
+// Bing API Key
+// You can grabn Bing API Key at
+// http://www.microsoft.com/web/post/using-the-free-bing-translation-apis.
+#define k_bing_api_key @"MY_BING_API_KEY"
 
 #endif

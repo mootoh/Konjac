@@ -24,48 +24,6 @@
 	<dict>
 		<key>tsInputModeListKey</key>
 		<dict>
-			<key>com.apple.inputmethod.currency</key>
-			<dict>
-				<key>tsInputModeAlternateMenuIconFileKey</key>
-				<string>currency.tiff</string>
-				<key>tsInputModeDefaultStateKey</key>
-				<true/>
-				<key>tsInputModeIsVisibleKey</key>
-				<true/>
-				<key>tsInputModeKeyEquivalentKey</key>
-				<string>C</string>
-				<key>tsInputModeKeyEquivalentModifiersKey</key>
-				<integer>4608</integer>
-				<key>tsInputModeMenuIconFileKey</key>
-				<string>currency.tiff</string>
-				<key>tsInputModePaletteIconFileKey</key>
-				<string>currency.tiff</string>
-				<key>tsInputModePrimaryInScriptKey</key>
-				<true/>
-				<key>tsInputModeScriptKey</key>
-				<string>smUnicodeScript</string>
-			</dict>
-			<key>com.apple.inputmethod.decimal</key>
-			<dict>
-				<key>tsInputModeAlternateMenuIconFileKey</key>
-				<string>Decimal.tiff</string>
-				<key>tsInputModeDefaultStateKey</key>
-				<true/>
-				<key>tsInputModeIsVisibleKey</key>
-				<true/>
-				<key>tsInputModeKeyEquivalentKey</key>
-				<string>D</string>
-				<key>tsInputModeKeyEquivalentModifiersKey</key>
-				<integer>4608</integer>
-				<key>tsInputModeMenuIconFileKey</key>
-				<string>Decimal.tiff</string>
-				<key>tsInputModePaletteIconFileKey</key>
-				<string>Decimal.tiff</string>
-				<key>tsInputModePrimaryInScriptKey</key>
-				<true/>
-				<key>tsInputModeScriptKey</key>
-				<string>smUnicodeScript</string>
-			</dict>
 			<key>com.apple.inputmethod.bing</key>
 			<dict>
 				<key>tsInputModeAlternateMenuIconFileKey</key>
@@ -90,8 +48,6 @@
 		</dict>
 		<key>tsVisibleInputModeOrderedArrayKey</key>
 		<array>
-			<string>com.apple.inputmethod.decimal</string>
-			<string>com.apple.inputmethod.currency</string>
 			<string>com.apple.inputmethod.bing</string>
 		</array>
 	</dict>
