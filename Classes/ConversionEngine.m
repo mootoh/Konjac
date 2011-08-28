@@ -58,12 +58,13 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 
 -(void)awakeFromNib
 {
-    [self setTranslateMode:k_en_ja];
+    [self setTranslateMode:k_bing_en_ja];
 }
 
 -(NSString*)convert:(NSString*)string
 {
     // Using Google Translate API
+#ifdef ENABLE_GOOGLE_TRANSLATE
     if ([translateMode isEqualToString:k_en_ja] || [translateMode isEqualToString:k_en_fr]) {
         NSString *src = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         src = [NSString stringWithFormat:@"http://api.microsofttranslator.com/v2/Http.svc/Translate?appId=%@&text=%@&from=en&to=ja", k_bing_api_key, src];
@@ -86,6 +87,7 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
         [jsonString release];
         return ret;
     }
+#endif // ENABLE_GOOGLE_TRANSLATE
 
     // Using Bing Translate API
     if ([translateMode isEqualToString:k_bing_en_ja]) {
