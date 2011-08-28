@@ -10,6 +10,8 @@
 #define NumberInput_Private_h
 
 // Bing API Key
+// You can grabn Bing API Key at
+// http://www.microsoft.com/web/post/using-the-free-bing-translation-apis.
 #define k_bing_api_key @"MY_BING_API_KEY"
 
 #endif
