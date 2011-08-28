@@ -10,3 +10,4 @@ build
 xcuserdata
 Snapshots
 APIKey.h
+Assets/*.png
