@@ -105,6 +105,10 @@ Here are the three approaches:
 
   if (text == nil || [text length] == 0) {
     text = [self originalBuffer];
+  } else {
+    BOOL showOriginalSentence = [[NSUserDefaults standardUserDefaults] boolForKey: @"showOriginalSentence"];
+    if (showOriginalSentence)
+      text = [text stringByAppendingFormat:@" (%@)", [self originalBuffer]];
   }
 
   [sender insertText:text replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
@@ -253,4 +257,10 @@ If the input text is not a string.  Commit the composition, and then insert the 
   [_originalBuffer release];
   [super dealloc];
 }
+
+-(NSMenu*)menu
+{
+  return [[NSApp delegate] menu];
+}
+
 @end

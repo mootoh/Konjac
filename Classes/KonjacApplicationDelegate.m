@@ -53,4 +53,17 @@ Copyright (C) 2007 Apple Inc. All Rights Reserved.
 -(ConversionEngine*)conversionEngine {
   return _conversionEngine;
 }
+
+- (NSMenu*) menu {
+  return _menu;
+}
+
+- (void) awakeFromNib {
+  NSMenuItem *preferences = [_menu itemWithTag:1];
+
+  if (preferences) {
+    [preferences setAction:@selector(showPreferences:)];
+  }
+}
+
 @end

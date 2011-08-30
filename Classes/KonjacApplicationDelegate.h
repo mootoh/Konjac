@@ -57,6 +57,7 @@ Note that the ConversionEngine is instantiated automatically because we said to 
 */
 @interface KonjacApplicationDelegate : NSObject {
   IBOutlet ConversionEngine *_conversionEngine;
+  IBOutlet NSMenu *_menu;
 }
 
 -(ConversionEngine*)conversionEngine;
